@@ -1,44 +1,44 @@
-name: Recovery Build (Legacy)
+name: リカバリーのビルド (レガシー)
 
 on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
+        description: 'ManifestのURL (SSHキーを使用する場合は、git@github.com:XXXXXを使用します)'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
       MANIFEST_BRANCH:
-        description: 'MANIFEST_BRANCH'
+        description: 'Manifestのブランチ'
         required: true
         default: 'twrp-7.1'
       DEVICE_TREE_URL:
-        description: 'DEVICE_TREE_URL'
+        description: 'デバイスツリーのURL'
         required: true
         default: 'https://github.com/ycly2333/android_device_EEBBK_H3000S-twrp'
       DEVICE_TREE_BRANCH:
-        description: 'DEVICE_TREE_BRANCH'
+        description: 'デバイスツリーのブランチ'
         required: true
         default: 'twrp-7.1'
       DEVICE_PATH:
-        description: 'DEVICE_PATH'
+        description: 'デバイスのパス'
         required: true
-        default: 'device/EEBBK/H3000S'
+        default: 'device/'
       COMMON_TREE_URL:
-        description: 'COMMON_TREE_URL (if no common tree, leave blank)'
+        description: 'CommonツリーのURL (Commonツリーがない場合は空白)'
         required: false
       COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
+        description: 'Commonのパス (Commonツリーがない場合は空白)'
         required: false
       DEVICE_NAME:
-        description: 'DEVICE_NAME'
+        description: 'デバイス名'
         required: true
-        default: 'H3000S'
+        default: ''
       MAKEFILE_NAME:
-        description: 'MAKEFILE_NAME'
+        description: 'Makefileの名前'
         required: true
-        default: 'omni_H3000S'
+        default: 'omni_'
       BUILD_TARGET:
-        description: 'BUILD_TARGET'
+        description: 'ビルドターゲット'
         required: true
         default: 'recovery'
 
