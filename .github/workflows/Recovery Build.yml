@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'ManifestのURL (if want to use SSH keys, use git@github.com:XXXXX)'
+        description: 'ManifestのURL (SSHキーを使用する場合は、git@github.com:XXXXXを使用します)'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
       MANIFEST_BRANCH:
