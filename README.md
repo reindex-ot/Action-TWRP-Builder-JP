@@ -1,8 +1,9 @@
-## Automated TWRP compilation based on Github Action
+## GitHub ActionsでTWRPを自動でビルド
+これは日本語化と余分な箇所の削除を行った非公式なバージョンです。
+## アドバイス
 
-## Advertising
-
-1. OrangeFox is [here](https://github.com/azwhikaru/Action-OFRP-Builder)
+1. OrangeFoxは[こちら](https://github.com/azwhikaru/Action-OFRP-Builder)
+2. OrangeFoxのビルドを日本語化した物は[こちら](https://github.com/reindex-ot/Action-OFRP-Builder-JP)
 
 ## Notice
 
@@ -18,28 +19,28 @@
 	- No rule to make ...
 	- Image ... out of size
 
-## Thanks to
+## 感謝
 
-All contributors
+すべての貢献者の方々
 
-## Parameter Description
+## パラメーターの説明
 
-| Name                 | Description                                       | Example                                                      |
+| 名前                 | 説明                                       | 例                                                      |
 | -------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| `MANIFEST_URL`       | Source address                                    | https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git |
-| `MANIFEST_BRANCH`    | Source branch                                     | twrp-12.1                                                    |
-| `DEVICE_TREE_URL`    | Device address                                    | https://github.com/TeamWin/android_device_asus_I003D         |
-| `DEVICE_TREE_BRANCH` | Device branch                                     | android-12.1                                                 |
-| `DEVICE_PATH`        | Device location                                   | device/asus/I003D                                            |
-| `COMMON_TREE_URL`    | Common tree address                               | https://github.com/TeamWin/android_device_asus_sm8250-common |
-| `COMMON_PATH`        | Common tree location                              | device/asus/sm8250-common                                    |
-| `DEVICE_NAME`        | Model name                                        | I003D                                                        |
-| `MAKEFILE_NAME`      | Makefile name                                     | twrp_I003D                                                   |
-| `BUILD_TARGET`       | Build Target Partition (boot/recovery/vendorboot) | recovery                                                     |
+| `MANIFEST_URL`       | ソースのアドレス                                    | https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git |
+| `MANIFEST_BRANCH`    | ソースのブランチ                                     | twrp-12.1                                                    |
+| `DEVICE_TREE_URL`    | デバイスのアドレス                                    | https://github.com/TeamWin/android_device_asus_I003D         |
+| `DEVICE_TREE_BRANCH` | デバイスのブランチ                                     | android-12.1                                                 |
+| `DEVICE_PATH`        | デバイスの場所                                   | device/asus/I003D                                            |
+| `COMMON_TREE_URL`    | Commonツリーのアドレス                               | https://github.com/TeamWin/android_device_asus_sm8250-common |
+| `COMMON_PATH`        | Commonツリーの場所                              | device/asus/sm8250-common                                    |
+| `DEVICE_NAME`        | モデル名                                        | I003D                                                        |
+| `MAKEFILE_NAME`      | Makefileの名前                                     | twrp_I003D                                                   |
+| `BUILD_TARGET`       | ビルドターゲットのパーティション (boot/recovery/vendorboot) | recovery                                                     |
 
 -----
 
-## How to use
+## 使い方
 
 ```
 For example, your username is: JohnSmith
@@ -59,7 +60,7 @@ For example, your username is: JohnSmith
 
 #### 3. Change the [username and email](https://github.com/CaptainThrowback/Action-Recovery-Builder/blob/main/.github/workflows/Recovery%20Build.yml#L100-L101) in the workflow to reflect your Github credentials (optional)
 
-## Setting up SSH Keys (optional)
+## SSHキーの設定 (任意)
 
 #### 4. Go to Settings, then select Deploy keys and select "Add deploy key" button.
 
