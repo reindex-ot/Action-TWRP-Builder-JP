@@ -1,44 +1,44 @@
-name: Recovery Build
+name: リカバリーのビルド
 
 on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'MANIFEST_URL (if want to use SSH keys, use git@github.com:XXXXX)'
+        description: 'ManifestのURL (if want to use SSH keys, use git@github.com:XXXXX)'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
       MANIFEST_BRANCH:
-        description: 'MANIFEST_BRANCH'
+        description: 'Manifestのブランチ'
         required: true
-        default: 'twrp-12.1'
+        default: 'twrp-11'
       DEVICE_TREE_URL:
-        description: 'DEVICE_TREE_URL'
+        description: 'デバイスツリーのURL'
         required: true
-        default: 'https://github.com/TeamWin/android_device_asus_I003D'
+        default: ''
       DEVICE_TREE_BRANCH:
-        description: 'DEVICE_TREE_BRANCH'
+        description: 'デバイスツリーのブランチ'
         required: true
-        default: 'android-12.1'
+        default: 'android-11'
       DEVICE_PATH:
-        description: 'DEVICE_PATH'
+        description: 'デバイスのパス'
         required: true
-        default: 'device/asus/I003D'
+        default: 'device/'
       COMMON_TREE_URL:
-        description: 'COMMON_TREE_URL (if no common tree, leave blank)'
+        description: 'CommonツリーのURL (Commonツリーがない場合は空白)'
         required: false
       COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
+        description: 'Commonのパス (Commonツリーがない場合は空白)'
         required: false
       DEVICE_NAME:
-        description: 'DEVICE_NAME'
+        description: 'デバイス名'
         required: true
-        default: 'I003D'
+        default: ''
       MAKEFILE_NAME:
-        description: 'MAKEFILE_NAME'
+        description: 'Makefileの名前'
         required: true
-        default: 'twrp_I003D'
+        default: 'twrp_'
       BUILD_TARGET:
-        description: 'BUILD_TARGET'
+        description: 'ビルドターゲット'
         required: true
         default: 'recovery'
 
